@@ -9,8 +9,12 @@ export const listings = [
     area: 86,
     type: 'Piso',
     image: 'photo-1600607687939-ce8a6c25118c',
-    position: [41.4026, 2.1569],
-    detail: 'Balcón · Exterior · Reformado',
+    images: [
+      'photo-1600607687939-ce8a6c25118c',
+      'photo-1600210492486-724fe5c67fb0',
+      'photo-1600566753086-00f18fb6b3ea',
+    ],
+    previousPrice: 450000,
   },
   {
     id: 2,
@@ -22,8 +26,11 @@ export const listings = [
     area: 74,
     type: 'Ático',
     image: 'photo-1600566753086-00f18fb6b3ea',
-    position: [41.3788, 2.1607],
-    detail: 'Terraza · Ascensor · Luz natural',
+    images: [
+      'photo-1600566753086-00f18fb6b3ea',
+      'photo-1600607687920-4e2a09cf159d',
+      'photo-1600607687939-ce8a6c25118c',
+    ],
   },
   {
     id: 3,
@@ -35,8 +42,11 @@ export const listings = [
     area: 68,
     type: 'Piso',
     image: 'photo-1600607687920-4e2a09cf159d',
-    position: [41.3991, 2.2014],
-    detail: 'Patio · Finca tranquila · Trastero',
+    images: [
+      'photo-1600607687920-4e2a09cf159d',
+      'photo-1600047509807-ba8f99d2cdde',
+      'photo-1600566753190-17f0baa2a6c3',
+    ],
   },
   {
     id: 4,
@@ -48,8 +58,11 @@ export const listings = [
     area: 128,
     type: 'Piso',
     image: 'photo-1600210492486-724fe5c67fb0',
-    position: [41.3895, 2.1574],
-    detail: 'Volta catalana · Galería · Techos altos',
+    images: [
+      'photo-1600210492486-724fe5c67fb0',
+      'photo-1600607687939-ce8a6c25118c',
+      'photo-1600566753086-00f18fb6b3ea',
+    ],
   },
   {
     id: 5,
@@ -61,8 +74,11 @@ export const listings = [
     area: 52,
     type: 'Piso',
     image: 'photo-1600566753190-17f0baa2a6c3',
-    position: [41.3802, 2.1892],
-    detail: 'Terraza · A 5 min del mar · Amueblado',
+    images: [
+      'photo-1600566753190-17f0baa2a6c3',
+      'photo-1600607687920-4e2a09cf159d',
+      'photo-1600210492486-724fe5c67fb0',
+    ],
   },
   {
     id: 6,
@@ -74,10 +90,17 @@ export const listings = [
     area: 156,
     type: 'Casa',
     image: 'photo-1600047509807-ba8f99d2cdde',
-    position: [41.3995, 2.1231],
-    detail: 'Jardín · Garaje · Zona residencial',
+    images: [
+      'photo-1600047509807-ba8f99d2cdde',
+      'photo-1600566753190-17f0baa2a6c3',
+      'photo-1600566753086-00f18fb6b3ea',
+    ],
   },
 ];
 
 export const formatPrice = (price) =>
-  new Intl.NumberFormat('es-ES', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 }).format(price);
+  new Intl.NumberFormat('es-ES', {
+    style: 'currency',
+    currency: 'EUR',
+    maximumFractionDigits: 0,
+  }).format(price);
